@@ -138,7 +138,7 @@ Identified:
 
 ---
 
-### OWASP ZAP
+### OWASP ZAP (DAST)
 
 Identified:
 
