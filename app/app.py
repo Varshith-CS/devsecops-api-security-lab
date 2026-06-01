@@ -73,15 +73,5 @@ def transfer_money():
         "amount": data.get("amount")
     })
 
-@app.route("/debug", methods=["GET"])
-def debug_info():
-    # Vulnerable: sensitive internal data exposure
-    return jsonify({
-        "debug": True,
-        "jwt_secret": JWT_SECRET,
-        "api_key": API_KEY,
-        "users": users
-    })
-
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)
